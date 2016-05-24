@@ -31,3 +31,9 @@ bower_components/
 
 # WebStorm
 .idea
+
+# npm-debug.log
+npm-debug.log
+
+# .DS_Store
+.Ds_Strore

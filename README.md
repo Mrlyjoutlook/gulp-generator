@@ -1,15 +1,39 @@
 # gulp项目脚手架
+### 此此项目的脚手架偏用于移动端web app的开发 
 
 ## use
 * npm install 安装所需要的依赖，至于nodeJS自行脑补。
 * npm start 运行项目，具体配置看json文件。
 
-## 功能
+## 项目目录结构
+``````
+|-dist
+|---images
+|---js
+|---style
+|---index.html
+|-node_modeules
+|-src
+|---fragment     --组件html
+|---images       
+|---js
+|---minJs        --引用的js,如jQ,误放入js里面
+|---style
+|---index.html
+|-.jshintrc
+|-gulpfile.js
+|-package.json
+``````
+
+## 介绍
 * 本地浏览器实时调试，再也不用F5。
 * js,css实现 合并，压缩
 * 静态页面压缩，图片压缩
-* SASS同步编译并压缩
 * font-spider字体压缩神器
+* 引入了前端轻量级的router功能,使用参考本项目的demo,以及 [链接](https://github.com/progrape/router)
+* jQuery目前版本为1.8.3,可自行更换
+* 前端适配方案采用手淘方案 [链接](https://github.com/amfe/article/issues/17)
+* 对于px转换rem,采用postcss处理,请参照本项目的demo
 
 ## gulp基本API
 * gulp.src(globs[, options])
@@ -30,19 +54,4 @@
 * [gulp官网](http://www.gulpjs.com.cn/) 
 * [Glup 简明使用教程](http://www.jianshu.com/p/3f2e13442555)
 
-## 配置
-* gulp 基础库
-* gulp-imagemin 图片压缩
-* gulp-ruby-sass sass
-* gulp-minify-css css压缩
-* gulp-jshint' js检查
-* gulp-uglify js压缩
-* gulp-rename 重命名
-* gulp-concat 合并文件
-* gulp-clean 清空文件夹
-* gulp-webserver 本地服务器
-* gulp-notify 改动通知
-* gulp-autoprefixer') 给css样式自动添加浏览器前缀
-* gulp-cache 图片快取，只有更改过得图片会进行压缩
-* gulp-livereload 即时重整
-* font-spider 字体压缩
+#### 如果遇到什么不懂,需要帮助可以lssues me,欢迎!
