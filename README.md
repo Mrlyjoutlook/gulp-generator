@@ -8,16 +8,14 @@
 ## 项目目录结构
 ``````
 |-dist
-|---images
-|---js
-|---style
+|---assets
 |---index.html
 |-node_modeules
 |-src
 |---fragment     --组件html
 |---images       
 |---js
-|---minJs        --引用的js,如jQ,误放入js里面
+|---lib        --引用的js,如jQ,误放入js里面
 |---style
 |---index.html
 |-.jshintrc
